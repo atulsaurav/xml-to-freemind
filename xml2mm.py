@@ -3,7 +3,7 @@ from lxml import etree as et
 from xml.sax.saxutils import quoteattr
 
 class FreeMindCreator:
-	"""docstring for LineageCreator"""
+	"""FreeMindCreator class. Accepts the outputfile as an argument. If not provided, writes the xml to stdout"""
 	def __init__(self, outfile=sys.stdout):
 		self.outfile = outfile
 		self.line_counter = 1
