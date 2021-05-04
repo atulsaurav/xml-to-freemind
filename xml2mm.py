@@ -35,11 +35,6 @@ class FreeMindCreator:
         with open(self.outfile, "w") as of:
             of.writelines(self.mmlines)
 
-    def generate_mm(self):
-        self.mmlines.append("</map>")
-        with open(self.outfile, "w") as of:
-            of.writelines(self.mmlines)
-
 
 if __name__ == "__main__":
     infile = sys.argv[1]
